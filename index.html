@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Form</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+ 
+<div class="container">
+  <div id="Checkout" class="inline">
+      <h1>Payment</h1>
+      
+      <form>
+          <div class="form-group">
+              <label for="PaymentAmount">Payment amount</label>
+              <input id="PaymentAmount" class="form-control" type="number" min=500 placeholder="$"  required>
+              
+          </div>
+          <div class="form-group">
+              <label or="NameOnCard">Name on card</label>
+              <input id="NameOnCard" class="form-control" type= "text" maxlength="26"  placeholder="name"  required></input>
+          </div>
+          <div class="form-group">
+              <label for="CreditCardNumber">Card number</label>
+              <input id="CreditCardNumber" class=" null card-image form-control" type="number" maxlength="16"   placeholder="1234 5678 1234 5678" required></input>
+          </div>
+    
+          <div class="expiry-date-group form-group">
+              <label for="ExpiryDate">Expiry date</label>
+              <input id="ExpiryDate" class="form-control" type="MM / YYYY" min=2017-01-05  placeholder="MM / YY"  required></input>
+          </div>
+          <div class="security-code-group form-group">
+              <label for="SecurityCode">Security code</label>
+              <div class="input-container" >
+                  <input id="SecurityCode" class="form-control" type="number"  placeholder="cvv" required></input>
+                  <i id="cvc" class="fa fa-question-circle"></i>
+              </div>
+            
+          </div>
+          <div class="zip-code-group form-group">
+              <label for="ZIPCode">ZIP/Postal code</label>
+              <div class="input-container">
+                  <input id="ZIPCode" class="form-control" type="number" maxlength="5"   placeholder="75063" required><!--</input>-->
+                 
+              </div>
+          </div>
+          <button id="PayButton" class="btn btn-block btn-success submit-button" type="submit">
+              <span class="align-middle"> Pay </span>
+          </button>
+      </form>
+
+</body>
+</html>
